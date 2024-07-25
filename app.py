@@ -32,7 +32,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Flask app
-app = Flask(__name__, static_folder='static')
+app = Flask(__name__, static_folder='static', template_folder='templates')
 
 # Fungsi untuk menangani command /start
 def start(update: Update, context: CallbackContext) -> None:
